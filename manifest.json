@@ -1,7 +1,7 @@
 {
     "name": "MTM Report",
     "short_name": "MTM Report",
-    "start_url": "./",
+    "start_url": "/",
     "background_color": "#3b82f6",
     "description": "Report Management System",
     "display": "standalone",
@@ -9,7 +9,7 @@
     "id": "?homescreen=1",
     "icons": [
         {
-            "src": "/img/android-icon-192x192.png",
+            "src": "https://github.githubassets.com/app-icon-192.png",
             "type": "image/png",
             "sizes": "192x192"
         }
