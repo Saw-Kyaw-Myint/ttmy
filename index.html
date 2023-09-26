@@ -9,4 +9,29 @@
 <body>
     <marquee>Hello</marquee>
 </body>
+<script>
+    let deferredPrompt;
+let userPermission = true;
+
+window.addEventListener('beforeinstallprompt', e => {
+    e.preventDefault();
+    deferredPrompt = e;
+});
+
+const handleInstallClick = async () => {
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome == 'dismissed') {
+        userPermission = false;
+    }
+    deferredPrompt = null;
+};
+
+document.addEventListener('click', event => {
+    if (deferredPrompt && userPermission) {
+        handleInstallClick();
+    }
+});
+
+</script>
 </html>
