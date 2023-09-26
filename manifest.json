@@ -9,7 +9,7 @@
     "id": "?homescreen=1",
     "icons": [
         {
-            "src": "img/android-icon-192x192.png",
+            "src": "./img/android-icon-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         }
