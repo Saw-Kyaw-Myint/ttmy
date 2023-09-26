@@ -9,9 +9,9 @@
     "id": "?homescreen=1",
     "icons": [
         {
-            "src": "img/android-icon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
+            "src": "https://github.githubassets.com/app-icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
         }
     ]
 }
