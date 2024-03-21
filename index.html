@@ -8,8 +8,12 @@
 </head>
 <body>
     <marquee>Hello</marquee>
+    <a href="#" onclick="openNewWindow('https://example.com'); return false;">Open Example.com in New Window</a>
 </body>
 <script>
+ function openNewWindow(url) {
+     window.open(url, "_blank", "width=600,height=400");
+}
 //     let deferredPrompt;
 // let userPermission = true;
 
